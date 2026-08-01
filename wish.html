@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Special Wish</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="title">Special Wish</h1>
+
+<p id="message"></p>
+
+<div id="emoji">
+✨🎉✨
+</div>
+
+</div>
+
+
+<script>
+
+let params = new URLSearchParams(window.location.search);
+
+let name = params.get("name");
+let occasion = params.get("occasion");
+
+
+if(name && occasion){
+
+document.getElementById("title").innerHTML =
+"🎉 Happy " + occasion + " " + name + " 🎉";
+
+
+document.getElementById("message").innerHTML =
+"Wishing you lots of happiness, success and beautiful moments! ❤️";
+
+}
+
+</script>
+
+</body>
+</html>
