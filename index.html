@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WishLink AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>✨ WishLink AI ✨</h1>
+    <p>Create Beautiful Wish Links</p>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <select id="occasion">
+        <option value="Birthday">🎂 Birthday</option>
+        <option value="Wedding">💍 Wedding</option>
+        <option value="Anniversary">❤️ Anniversary</option>
+        <option value="Party">🎉 Party</option>
+    </select>
+
+    <button onclick="generateWish()">Generate Link</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
